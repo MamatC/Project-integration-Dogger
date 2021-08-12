@@ -1,0 +1,138 @@
+:root {
+    --white : #ffffff;
+    --black : #000000;
+    --light-gray : #f8f9fa;
+    --gray : #999999;
+    --dark-gray : #4a4a4b;
+    --green : #a2c0be;
+    --dark-green : #567876;
+    --orange : #ff9900;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--light-gray);
+    padding-top: 20px;
+}
+
+/* mise en forme navbar */
+header nav a{
+    text-decoration: none;
+    color: var(--gray);
+    margin-left: 45px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--black);
+    margin-left: 0;
+}
+.pt-orange{
+    color: var(--orange);
+}
+
+/* mise forme header text & img */
+h1{
+    font-weight:300;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+header section p{
+    color: var(--gray);
+    font-weight: lighter;
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+header section img{
+    width: 35%;
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+/* MAIN */
+
+/* section premier titre gras */
+.welcome{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding-top: 20px;
+}
+main .welcome h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+main .welcome p{
+    color: var(--gray);
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+/* section 3 cartes */
+
+.cards{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    gap: 150px;
+}
+.cards p{
+    color: var(--gray);
+    padding-bottom: 20px;
+}
+.cards h2{
+    font-size: 2em;
+    font-weight:400;
+}
+main .cards img{
+    width: 120%;
+    box-shadow: 10px 10px 0px var(--green);
+}
+.btn{
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 500ms;
+}
+.btn:hover{
+    background-color: var(--black);
+    transition: 500ms;
+}
+main section #text-left{
+    text-align: left;
+}
+
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    font-size: 0.8em;
+    padding: 50px 0;
+    margin-top: 50px;
+}
